@@ -1,0 +1,14 @@
+Per poter deployare correttamente su heroku bisogna specificare la versione di JAVA corretta
+'''
+java.runtime.version=17
+'''
+
+che deve combaciare con la versione del pom.xml, precisamente nelle properties
+
+'''
+<properties>
+	<java.version>17</java.version>
+</properties>
+'''
+
+Questo eviterà molti errori
