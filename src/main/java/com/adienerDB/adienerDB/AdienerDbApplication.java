@@ -16,7 +16,7 @@ public class AdienerDbApplication {
 
 		SpringApplication.run(AdienerDbApplication.class, args);
 
-		@RequestMapping("/")
+		@RequestMapping("/hello")
 		@RestController
 		class SayHello {
 
