@@ -17,16 +17,6 @@ public class AdienerDbApplication {
 
 		SpringApplication.run(AdienerDbApplication.class, args);
 
-		@RestController
-		@CrossOrigin("*")
-		class HelloController {
-
-			@GetMapping("/")
-			public String index() {
-				return "Greetings from Spring Boot!";
-			}
-
-		}
 	}
 
 }
