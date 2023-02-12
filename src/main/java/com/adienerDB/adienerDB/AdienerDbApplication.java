@@ -16,19 +16,14 @@ public class AdienerDbApplication {
 
 		SpringApplication.run(AdienerDbApplication.class, args);
 
-		@RequestMapping("/hello")
 		@RestController
-		class SayHello {
+		class HelloController {
 
-
-			@GetMapping("")
-			public List<String> myName() {
-				List<String> miaLista =  new ArrayList<>();
-				miaLista.add( "Adiener" );
-				miaLista.add( "Lopez" );
-				miaLista.add( "Velazquez" );
-				return miaLista;
+			@GetMapping("/")
+			public String index() {
+				return "Greetings from Spring Boot!";
 			}
+
 		}
 	}
 
